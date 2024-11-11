@@ -34,19 +34,22 @@
       <path value="RelatedPerson" />
       <alias value="hg-ContactPerson" />
     </element>
-    <element id="RelatedPerson.extension:Comment">
+    <element id="RelatedPerson.extension:comment">
       <path value="RelatedPerson.extension" />
-      <sliceName value="Comment" />
+      <sliceName value="comment" />
       <short value="Comment" />
+      <definition value="Additional information about the contact. For example, information such as 'the father is also a medical doctor' can be included here. In addition, if the contact works at an organization, the organization can be mentioned here. If the organization is listed as a contact and no actual contact is known, this can also be stated here. In this case, the name information can be left blank." />
+      <alias value="Toelichting" />
+      <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/ext-Comment" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/note" />
       </type>
       <isModifier value="false" />
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
-        <map value="hg-dataelement-5253" />
-        <comment value="Toelichting" />
+        <map value="hg-dataelement-5289" />
+        <comment value="Comment" />
       </mapping>
     </element>
     <element id="RelatedPerson.relationship">
