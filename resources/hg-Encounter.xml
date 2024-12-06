@@ -70,5 +70,52 @@
         <comment value="ContactType" />
       </mapping>
     </element>
+    <element id="Encounter.participant:healthProfessional">
+      <path value="Encounter.participant" />
+      <sliceName value="healthProfessional" />
+      <mapping>
+        <identity value="hg-dataset-020-beta1-20230612" />
+        <map value="hg-dataelement-113" />
+        <comment value="ContactWith" />
+      </mapping>
+    </element>
+    <element id="Encounter.participant:healthProfessional.individual">
+      <path value="Encounter.participant.individual" />
+      <mapping>
+        <identity value="hg-dataset-020-beta1-20230612" />
+        <map value="hg-dataelement-5394" />
+        <comment value="HealthProfessional" />
+      </mapping>
+    </element>
+    <element id="Encounter.participant:responsibleHealthProfessional">
+      <path value="Encounter.participant" />
+      <sliceName value="responsibleHealthProfessional" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+        <code value="RESP" />
+      </code>
+      <max value="1" />
+      <mapping>
+        <identity value="hg-dataset-020-beta1-20230612" />
+        <map value="hg-dataelement-804" />
+        <comment value="ContactResponsible" />
+      </mapping>
+    </element>
+    <element id="Encounter.participant:responsibleHealthProfessional.type">
+      <path value="Encounter.participant.type" />
+      <short value="HealthProfessionalRole" />
+      <definition value="The role the health professional fulfils in the healthcare process. For health professionals, this could be for example attender, referrer or performer." />
+      <alias value="ZorgverlenerRol" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Encounter.participant.individual">
+      <path value="Encounter.participant.individual" />
+      <mapping>
+        <identity value="hg-dataset-020-beta1-20230612" />
+        <map value="hg-datalement-5397" />
+        <comment value="HealthProfessional" />
+      </mapping>
+    </element>
   </differential>
 </StructureDefinition>
