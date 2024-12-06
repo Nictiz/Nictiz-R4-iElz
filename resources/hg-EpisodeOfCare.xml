@@ -35,15 +35,15 @@
     </element>
     <element id="EpisodeOfCare.meta.tag">
       <path value="EpisodeOfCare.meta.tag" />
-    </element>
-    <element id="EpisodeOfCare.meta.tag.userSelected">
-      <path value="EpisodeOfCare.meta.tag.userSelected" />
-      <definition value="Indicates the episode that the general practitioner wants to 'monitor'. These can be either open or closed episodes." />
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
         <map value="hg-dataelement-1829" />
         <comment value="AttentionFlag" />
       </mapping>
+    </element>
+    <element id="EpisodeOfCare.meta.tag.userSelected">
+      <path value="EpisodeOfCare.meta.tag.userSelected" />
+      <definition value="Indicates the episode that the general practitioner wants to 'monitor'. These can be either open or closed episodes." />
     </element>
     <element id="EpisodeOfCare.identifier">
       <path value="EpisodeOfCare.identifier" />
@@ -53,7 +53,7 @@
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
         <map value="hg-dataelement-1205" />
-        <comment value="Identificatienummer" />
+        <comment value="IdentificationNumber" />
       </mapping>
     </element>
     <element id="EpisodeOfCare.careManager">
@@ -61,7 +61,7 @@
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
         <map value="hg-dataelement-5322" />
-        <comment value="Report Responsible" />
+        <comment value="ReportResponsible" />
       </mapping>
     </element>
   </differential>
