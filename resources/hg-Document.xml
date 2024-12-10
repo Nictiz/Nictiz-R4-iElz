@@ -14,7 +14,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="An Document as used within the medical record (Dossiergegevens) section in the ELZ data set. It is based on the HL7 FHIR DocumentReference core 4.0.1 resource as much as possible, but adds some elements that are necessary for data exchange in the primary care domain." />
+  <description value="A Document as used within the medical record (Dossiergegevens) section in the ELZ data set. It is based on the HL7 FHIR DocumentReference core 4.0.1 resource as much as possible, but adds some elements that are necessary for data exchange in the primary care domain." />
   <purpose value="A derived profile from [DocumentReference](http://hl7.org/fhir/R4/documentreference.html) to provide a version better suited for use in ELZ use cases." />
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
@@ -30,6 +30,16 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
   <derivation value="constraint" />
   <differential>
+    <element id="DocumentReference">
+      <path value="DocumentReference" />
+      <short value="Gives the document." />
+      <alias value="Document" />
+      <mapping>
+        <identity value="hg-dataset-020-beta1-20230612" />
+        <map value="hg-dataelement-374" />
+        <comment value="Document" />
+      </mapping>
+    </element>
     <element id="DocumentReference.masterIdentifier">
       <path value="DocumentReference.masterIdentifier" />
       <mapping>

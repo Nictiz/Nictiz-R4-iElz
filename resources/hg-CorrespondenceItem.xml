@@ -30,6 +30,14 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Communication" />
   <derivation value="constraint" />
   <differential>
+    <element id="Communication">
+      <path value="Communication" />
+      <mapping>
+        <identity value="hg-dataset-020-beta1-20230612" />
+        <map value="hg-dataelement-380" />
+        <comment value="CorrespondenceItem" />
+      </mapping>
+    </element>
     <element id="Communication.identifier">
       <path value="Communication.identifier" />
       <short value="IdentificationNumber" />
@@ -44,11 +52,29 @@
     <element id="Communication.basedOn">
       <path value="Communication.basedOn" />
       <short value="RelationEpisodeOfCare" />
+      <alias value="fulfills" />
       <alias value="RelatieZorgepisode" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-EpisodeOfCare" />
+      </type>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)" />
+      </mapping>
+      <mapping>
+        <identity value="workflow" />
+        <map value="Event.basedOn" />
+      </mapping>
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
         <map value="hg-dataelement-1288" />
-        <comment value="EpisodeOfCare" />
+        <comment value="RelationEpisodeOfCare" />
       </mapping>
     </element>
     <element id="Communication.category">
@@ -92,7 +118,11 @@
       <path value="Communication.reasonReference" />
       <type>
         <code value="Reference" />
-        <profile value="http://nictiz.nl/fhir/StructureDefinition/hg-Document" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/hg-Document" />
       </type>
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
