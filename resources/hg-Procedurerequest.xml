@@ -34,8 +34,8 @@
       <path value="ServiceRequest.identifier" />
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
-        <map value="hg-dataelement-1201" />
-        <comment value="IndentificationNumber" />
+        <map value="hg-dataelement-1227" />
+        <comment value="IdentificationNumber" />
       </mapping>
     </element>
     <element id="ServiceRequest.encounter">
@@ -50,7 +50,7 @@
       <path value="ServiceRequest.requester" />
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
-        <map value="hg-dataelement-5411" />
+        <map value="hg-dataelement-5322" />
         <comment value="Requester" />
       </mapping>
     </element>
