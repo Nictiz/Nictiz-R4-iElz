@@ -35,7 +35,7 @@
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
         <map value="hg-dataelement-1273" />
-        <comment value="Indentificationnumber" />
+        <comment value="IdentificationNumber" />
       </mapping>
     </element>
   </differential>
