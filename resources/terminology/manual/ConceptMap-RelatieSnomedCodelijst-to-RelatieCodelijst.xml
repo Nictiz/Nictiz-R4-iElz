@@ -66,7 +66,7 @@
         <display value="Sister" />
         <equivalence value="wider" />
         <!-- comment reviewen-->
-        <comment value="original value is narrower: Adoptive sister"/>
+        <comment value="The target ValueSet doesn't contain a suitable code with equivalence 'equals' to the source code. The original value is more specific, namely 'Adoptive sister'."/>
       </target>
     </element>
     <element>
@@ -121,17 +121,6 @@
         <code value="DAUINLAW" />
         <display value="Daughter in-law" />
         <equivalence value="equal" />
-      </target>
-    </element>
-    <element>
-      <code value="262043009" />
-      <display value="Partner in relationship" />
-      <target>
-        <code value="DOMPART" />
-        <display value="Domestic partner" />
-        <equivalence value="narrower" />
-        <!-- comment reviewen-->
-        <comment value="original value is wider: Partner in relationship"/>
       </target>
     </element>
     <element>
@@ -447,7 +436,7 @@
       </target>
     </element>-->
   </group>
-<!-- group 2: SNOMED to NullFlavour -->
+<!-- group 2: SNOMED to OTH from NullFlavour -->
   <group>
     <source value="http://snomed.info/sct" />
     <target value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor" />
@@ -475,11 +464,99 @@
       </target>
     </element>
     <element>
+      <code value="79508001" />
+      <display value="Adoptive sibling" />
+      <target>
+        <code value="OTH" />
+        <display value="Other" />
+        <equivalence value="wider" />
+        <!-- comment reviewen-->
+        <comment value="The target ValueSet doesn't contain a suitable code for mapping the source code. The original value is ‘Adoptive sibling’. The target CodeSystem does however contain the code SIB ‘sibling’ which could be used optionally with equivalence ‘wider’, as the target ValueSet is of binding Extensible."/>
+      </target>
+    </element>
+    <element>
+      <code value="262043009" />
+      <display value="Partner in relationship" />
+      <target>
+        <code value="OTH" />
+        <display value="Other" />
+        <equivalence value="wider" />
+        <!-- comment reviewen-->
+        <comment value="The target ValueSet doesn't contain a suitable code for mapping the source code. The original value is ‘Partner in relationship’. The target CodeSystem does however contain the code SIGOTHR ‘significant other’ which could be used optionally with equivalence ‘wider’, as the target ValueSet is of binding Extensible."/>
+      </target>
+    </element>
+    <element>
+      <code value="300761000146104" />
+      <display value="Ex-partner" />
+      <target>
+        <code value="OTH" />
+        <display value="Other" />
+        <equivalence value="wider" />
+        <!-- comment reviewen-->
+        <comment value="The target ValueSet doesn't contain a suitable code for mapping the source code. The original value is ‘Ex-partner’. The target CodeSystem does however contain the code FMRSPS ‘former spouse’ which could be used optionally, as the target ValueSet is of binding Extensible, in case the two ex-partners used to be married."/>
+      </target>
+    </element>
+    <element>
+      <code value="39062003" />
+      <display value="Foster child" />
+      <target>
+        <code value="OTH" />
+        <display value="Other" />
+        <equivalence value="wider" />
+        <!-- comment reviewen-->
+        <comment value="The target ValueSet doesn't contain a suitable code for mapping the source code. The original value is ‘Foster child’. The target CodeSystem does however contain the code CHLDFOST ‘foster child’ which could be used optionally with equivalence ‘equals’, as the target ValueSet is of binding Extensible."/>
+      </target>
+    </element>
+    <element>
+      <code value="90921004" />
+      <display value="Foster parent" />
+      <target>
+        <code value="OTH" />
+        <display value="Other" />
+        <equivalence value="wider" />
+        <!-- comment reviewen-->
+        <comment value="The target ValueSet doesn't contain a suitable code for mapping the source code. The original value is ‘Foster parent’. The target CodeSystem does however contain the code PRNFOST ‘foster parent’ which could be used optionally with equivalence ‘equals’, as the target ValueSet is of binding Extensible."/>
+      </target>
+    </element>
+    <element>
+      <code value="48385004" />
+      <display value="Acquaintance" />
+      <target>
+        <code value="OTH" />
+        <display value="Other" />
+        <equivalence value="wider" />
+        <!-- comment reviewen-->
+        <comment value="The target ValueSet doesn't contain a suitable code for mapping the source code."/>
+      </target>
+    </element>
+    <element>
+      <code value="86372007" />
+      <display value="Grandchild" />
+      <target>
+        <code value="OTH" />
+        <display value="Other" />
+        <equivalence value="wider" />
+        <!-- comment reviewen-->
+        <comment value="The target ValueSet doesn't contain a suitable code for mapping the source code. The original value is ‘Grandchild’. The target CodeSystem does however contain the code GCHILD ‘grandchild’ which could be used optionally with equivalence ‘equals’, as the target ValueSet is of binding Extensible."/>
+      </target>
+    </element>
+    <element>
+      <code value="38312007" />
+      <display value="Grandparent" />
+      <target>
+        <code value="OTH" />
+        <display value="Other" />
+        <equivalence value="wider" />
+        <!-- comment reviewen-->
+        <comment value="The target ValueSet doesn't contain a suitable code for mapping the source code. The original value is ‘Grandparent’. The target CodeSystem does however contain the code GPARNT ‘grandparent’ which could be used optionally with equivalence ‘equals’, as the target ValueSet is of binding Extensible."/>
+      </target>
+    </element>
+    <element>
       <code value="" />
       <display value="" />
       <target>
-        <code value="" />
-        <display value="" />
+        <code value="OTH" />
+        <display value="Other" />
         <equivalence value="wider" />
         <!-- comment reviewen-->
         <comment value="original value is narrower: ..."/>
