@@ -52,25 +52,13 @@
     <element id="Communication.basedOn">
       <path value="Communication.basedOn" />
       <short value="RelationEpisodeOfCare" />
-      <alias value="fulfills" />
+      <definition value="The current resource (CorrespondenceItem) is a part of the EpisodeOfCare." />
       <alias value="RelatieZorgepisode" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
         <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-EpisodeOfCare" />
       </type>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)" />
-      </mapping>
-      <mapping>
-        <identity value="workflow" />
-        <map value="Event.basedOn" />
-      </mapping>
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
         <map value="hg-dataelement-1288" />
@@ -79,6 +67,8 @@
     </element>
     <element id="Communication.category">
       <path value="Communication.category" />
+      <short value="CorrespondenceCategory" />
+      <definition value="Indicates the category of correspondence, such as discard report or living wills." />
       <binding>
         <strength value="required" />
         <description value="valueCodes for general categories of communications such as alerts, instructions, etc." />
@@ -92,6 +82,13 @@
     </element>
     <element id="Communication.encounter">
       <path value="Communication.encounter" />
+      <short value="RelationContact" />
+      <definition value="The current resource (CorrespondenceItem) is a part of the Encounter." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+        <targetProfile value="http://nictiz.nl/fhir/StructureDefinition/nl-core-Encounter" />
+      </type>
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
         <map value="hg-dataelement-1285" />
@@ -100,6 +97,8 @@
     </element>
     <element id="Communication.recipient">
       <path value="Communication.recipient" />
+      <short value="CorrespondenceAddressee" />
+      <definition value="The person who receives the correspondence." />
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
         <map value="hg-dataelement-536" />
@@ -116,6 +115,8 @@
     </element>
     <element id="Communication.reasonReference">
       <path value="Communication.reasonReference" />
+      <short value="Document" />
+      <definition value="It's optional to attach a document to the current resource (CorrespondenceItem). The meta data of this document will be represented in the DocumentReference." />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
