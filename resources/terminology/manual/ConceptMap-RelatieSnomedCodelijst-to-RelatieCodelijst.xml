@@ -1,10 +1,8 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
-<!-- in onderstaande id, hoofdletters gebruiken, i.e. ConceptMap-->
   <id value="ConceptMap-RelatieSnomedCodelijst-to-RelatieCodelijst" />
   <extension url="http://hl7.org/fhir/StructureDefinition/concept-bidirectional">
     <valueBoolean value="false" />
   </extension>
-  <!-- in onderstaande url is het pad gewijzigd naar '/RelatieSnomedCodelijst-to-RelatieCodelijst'-->
   <url value="http://nictiz.nl/fhir/ConceptMap/RelatieSnomedCodelijst-to-RelatieCodelijst" />
   <version value="0.0.1" />
   <name value="RelatieSnomedCodelijst_to_RelatieCodelijst" />
@@ -265,7 +263,7 @@
         <equivalence value="equal" />
       </target>
     </element>
-    <!-- onderstaand element aanvullen/reviewen obv bits issue SNOMED-1442 -->
+    <!-- onderstaande SNOMED code in element.code komt mogelijk te vervallen of wordt vervangen n.a.v issue SNOMED-1442 -->
     <element>
       <code value="47801002" />
       <display value="Male cousin" />
@@ -273,10 +271,10 @@
         <code value="COUSN" />
         <display value="Cousin" />
         <equivalence value="wider" />
-        <comment value=" "/>
+        <comment value="The target ValueSet doesn't contain a suitable code with equivalence 'equals' to the source code. The original value is more specific, namely 'Male cousin'."/>
       </target>
     </element>
-    <!-- onderstaand element aanvullen/reviewen obv bits issue SNOMED-1442 -->
+    <!-- onderstaande SNOMED code in element.code komt mogelijk te vervallen of wordt vervangen n.a.v issue SNOMED-1442 -->
     <element>
       <code value="2959006" />
       <display value="Female cousin" />
@@ -284,7 +282,7 @@
         <code value="COUSN" />
         <display value="Cousin" />
         <equivalence value="wider" />
-        <comment value=" "/>
+        <comment value="The target ValueSet doesn't contain a suitable code with equivalence 'equals' to the source code. The original value is more specific, namely 'Female cousin'."/>
       </target>
     </element>
     <element>
@@ -596,6 +594,3 @@
     </element>
   </group>
 </ConceptMap>
-<!-- twee codes, waarschijnlijk nephew en niece, moeten naderhand worden bepaald, zie ook bits issue SNOMED-1442 -->
-<!-- alle comments reviewen-->
-<!-- dubbel check: het is niet nodig om OTH op te nemen in de conceptmap (het mapt naar zichzelf)-->
