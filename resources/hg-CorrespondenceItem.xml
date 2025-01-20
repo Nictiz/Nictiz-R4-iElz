@@ -32,6 +32,9 @@
   <differential>
     <element id="Communication">
       <path value="Communication" />
+      <short value="CorrespondenceItem" />
+      <definition value="Provides metadata about the correspondence." />
+      <alias value="Correspondentie-item" />
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
         <map value="hg-dataelement-380" />
@@ -69,6 +72,7 @@
       <path value="Communication.category" />
       <short value="CorrespondenceCategory" />
       <definition value="Indicates the category of correspondence, such as discard report or living wills." />
+      <alias value="CorrespondentieCategorie" />
       <binding>
         <strength value="required" />
         <description value="valueCodes for general categories of communications such as alerts, instructions, etc." />
@@ -84,6 +88,7 @@
       <path value="Communication.encounter" />
       <short value="RelationContact" />
       <definition value="The current resource (CorrespondenceItem) is a part of the Encounter." />
+      <alias value="RelatieContact" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter" />
@@ -99,6 +104,7 @@
       <path value="Communication.recipient" />
       <short value="CorrespondenceAddressee" />
       <definition value="The person who receives the correspondence." />
+      <alias value="CorrespondentieGeadresseerde" />
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
         <map value="hg-dataelement-536" />
@@ -107,6 +113,9 @@
     </element>
     <element id="Communication.sender">
       <path value="Communication.sender" />
+      <short value="CorrespondenceSender" />
+      <definition value="The person who sends the correspondence." />
+      <alias value="CorrespondentieAfzender" />
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
         <map value="hg-dataelement-382" />
@@ -117,6 +126,7 @@
       <path value="Communication.reasonReference" />
       <short value="Document" />
       <definition value="It's optional to attach a document to the current resource (CorrespondenceItem). The meta data of this document will be represented in the DocumentReference." />
+      <alias value="Document" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
@@ -149,6 +159,9 @@
     </element>
     <element id="Communication.note.text">
       <path value="Communication.note.text" />
+      <short value="CorrespondenceSummary" />
+      <definition value="Provides the summary prepared by the recipient of the document." />
+      <alias value="CorrespondentieSamenvatting" />
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
         <map value="hg-dataelement-381" />
