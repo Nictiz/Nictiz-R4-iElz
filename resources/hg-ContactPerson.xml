@@ -73,7 +73,7 @@
     <element id="RelatedPerson.relationship:roleSnomed">
       <path value="RelatedPerson.relationship" />
       <sliceName value="roleSnomed" />
-      <definition value="In primary care use cases often SNOMED is used to convey information on the role of a contact person. In order to be zib compliant he ConceptMap &lt;http://nictiz.nl/fhir/ConceptMap-RolSnomedCodelijst-to-RolCodelijst&gt; can be used to relate these two ValueSets. The SNOMED code can be conveyed via the dedicated slice." />
+      <definition value="In primary care use cases often SNOMED is used to convey information on the role of a contact person. In order to be zib compliant the ConceptMap &lt;http://nictiz.nl/fhir/ConceptMap-RolSnomedCodelijst-to-RolCodelijst&gt; can be used to relate these two ValueSets. The SNOMED code can be conveyed via the dedicated slice." />
       <binding>
         <strength value="extensible" />
         <description value="Use ConceptMap RolSnomedCodelijst_to_RolCodelijst to translate terminology from RolSnomedCodelijst to RolCodelijst." />
@@ -83,7 +83,7 @@
     <element id="RelatedPerson.relationship:relationshipSnomed">
       <path value="RelatedPerson.relationship" />
       <sliceName value="relationshipSnomed" />
-      <definition value="In primary care use cases often SNOMED is used to convey information on the role of a contact person. In order to be zib compliant he ConceptMap &lt;http://nictiz.nl/fhir/ConceptMap-RelatieSnomedCodelijst-to-RelatieCodelijst&gt; can be used to relate these two ValueSets. The SNOMED code can be conveyed via the dedicated slice." />
+      <definition value="In primary care use cases often SNOMED is used to convey information on the role of a contact person. In order to be zib compliant the ConceptMap &lt;http://nictiz.nl/fhir/ConceptMap-RelatieSnomedCodelijst-to-RelatieCodelijst&gt; can be used to relate these two ValueSets. The SNOMED code can be conveyed via the dedicated slice." />
       <binding>
         <strength value="extensible" />
         <description value="Use ConceptMap RelatieSnomedCodelijst_to_RelatieCodelijst to translate terminology from RelatieSnomedCodelijst to RelatieCodelijst." />
