@@ -62,7 +62,7 @@
       <alias value="RelationEncounter" />
       <mapping>
         <identity value="hg-dataset-020-beta1-20230612" />
-        <map value="hg-dataelement-1266" />
+        <map value="hg-dataelement-1212" />
         <comment value="RelationEncounter" />
       </mapping>
     </element>
